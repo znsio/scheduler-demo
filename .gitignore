@@ -32,3 +32,5 @@ out/
 ### Specmatic ###
 .specmatic/
 specmatic.json
+
+Kafka/

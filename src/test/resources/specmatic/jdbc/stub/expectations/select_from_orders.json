@@ -1,0 +1,12 @@
+{
+  "query": "select o1_0.id,o1_0.date,o1_0.status from order o1_0",
+  "response": {
+    "rows": [
+      {
+        "id": 1,
+        "date": "2022-12-31 23:59:59.123456789",
+        "status": "new"
+      }
+    ]
+  }
+}

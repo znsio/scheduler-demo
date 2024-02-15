@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: yourname
+      changes:
+        - insert:
+            tableName: order
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: date
+                  value: "2022-01-01 00:00:00"
+              - column:
+                  name: status
+                  value: "pending"
+        - insert:
+            tableName: order
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: date
+                  value: "2022-01-02 00:00:00"
+              - column:
+                  name: status
+                  value: "completed"

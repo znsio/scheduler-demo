@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: classpath:/db/changelog/changes/001-create-order-table.yaml
+  - include:
+      file: classpath:/db/changelog/changes/002-insert-dummy-orders.yaml

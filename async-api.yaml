@@ -1,0 +1,29 @@
+asyncapi: 2.6.0
+info:
+  title: Product audits API
+  version: '1.0.0'
+servers:
+  kafka-dev:
+    url: tcp://localhost:61616
+    protocol: kafka
+channels:
+  process-order:
+    publish:
+      operationId: processOrder
+      message:
+        bindings:
+          kafka:
+            key:
+              type: string
+            bindingVersion: '0.4.0'
+        payload:
+          $ref: "#/components/messages/order"
+components:
+  messages:
+    order:
+      name: order
+      title: An inventory product
+      summary: Product representing items in inventory
+      contentType: application/json
+      payload:
+        type: string
